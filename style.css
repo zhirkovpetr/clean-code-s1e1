@@ -70,25 +70,8 @@ button:hover {
 }
 
 /* Heading */
-
-
-@
-@
--
-87
-,
-7
-+
-
-87
-,
-7
-@
-@
-input[type="text"] {
-
 h3,
-label[for='new-task'] {
+label[for="new-task"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -108,23 +91,6 @@ input[type="text"] {
   background: #FFF;
   border-radius: 6px;
   font-family: Lato, sans-serif;
-
-
-@
-@
--
-159
-,
-11
-+
-
-159
-,
-11
-@
-@
-ul li input[type=text] {
-
   color: #888;
 }
 
@@ -133,7 +99,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for='new-task'] {
+label[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }

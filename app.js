@@ -26,7 +26,7 @@ var createNewTaskElement = function (taskString) {
   var deleteButton = document.createElement("button");//delete button
   var deleteButtonImg = document.createElement("img");//delete button image
   label.innerText = taskString;
-  label.className = 'task';
+  label.className = "task";
   //Each elements, needs appending
   checkBox.type = "checkbox";
   editInput.type = "text";
@@ -34,7 +34,7 @@ var createNewTaskElement = function (taskString) {
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
   editButton.className = "edit";
   deleteButton.className = "delete";
-  deleteButtonImg.src = './remove.svg';
+  deleteButtonImg.src = "./remove.svg";
   deleteButton.appendChild(deleteButtonImg);
   //and appending.
   listItem.appendChild(checkBox);
@@ -57,9 +57,9 @@ var addTask = function () {
 //Edit an existing task.
 var editTask = function () {
   console.log("Edit Task...");
-  console.log("Change 'edit' to 'save'");
+  console.log(`Change "edit" to "save"`);
   var listItem = this.parentNode;
-  var editInput = listItem.querySelector('input[type=text]');
+  var editInput = listItem.querySelector("input[type=text]");
   var label = listItem.querySelector("label");
   var editBtn = listItem.querySelector(".edit");
   var containsClass = listItem.classList.contains("editmode");
@@ -137,6 +137,6 @@ for (var i = 0; i < completedTasksHolder.children.length; i++) {
   //bind events to list items chldren(tasksIncompleted)
   bindTaskEvents(completedTasksHolder.children[i], taskIncomplete);
 }
-// Issues with usability don't get seen until they are in front of a human tester.
+// Issues with usability don"t get seen until they are in front of a human tester.
 //prevent creation of empty tasks.
 //Change edit to save when you are in edit mode.
